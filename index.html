@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heart of Christmas ✦ ANTYO</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: radial-gradient(circle at center, #0b0f19 0%, #000000 80%);
+      font-family: 'Poppins', sans-serif;
+      color: white;
+    }
+
+    #scene {
+      width: 100vw;
+      height: 100vh;
+      display: block;
+    }
+
+    #lyrics {
+      position: absolute;
+      bottom: 10%;
+      width: 100%;
+      text-align: center;
+      font-size: 2.5rem;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+      letter-spacing: 1px;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    button#play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #e63946;
+      border: none;
+      color: white;
+      font-size: 1.3rem;
+      padding: 14px 30px;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 0 0 25px rgba(255,255,255,0.4);
+      transition: all 0.3s ease;
+    }
+    button#play:hover {
+      background: #f77f00;
+      transform: translate(-50%, -50%) scale(1.05);
+      box-shadow: 0 0 40px rgba(255,200,150,0.8);
+    }
+
+    #vignette {
+      pointer-events: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at center, transparent 60%, rgba(0,0,0,0.7) 100%);
+    }
+
+    #credit {
+      position: absolute;
+      bottom: 15px;
+      right: 20px;
+      font-size: 0.9rem;
+      opacity: 0.5;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <canvas id="scene"></canvas>
+  <video id="bgVideo" autoplay loop muted playsinline
+  style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; object-fit: cover; z-index: -1;filter: brightness(0.2);">
+  <source src="background.mp4" type="video/mp4">
+</video>
+
+ <div id="lyrics-container" style="text-align:center; position:absolute; bottom:10%; width:100%;">
+  <div id="lyrics"></div>
+  <img id="lyric-image" style="display:none; max-width:250px; margin-top:10px;" />
+</div>
+  <button id="play">▶ Play Song</button>
+  <div id="vignette"></div>
+  <div id="credit">ANTYO ✦ Heart of Christmas</div>
+
+  <script src="https://unpkg.com/three@0.152.2/build/three.min.js"></script>
+  <script src="https://unpkg.com/gsap@3.12.2/dist/gsap.min.js"></script>
+  <audio id="song" src="last-christmas-short.mp3.mp3"></audio>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

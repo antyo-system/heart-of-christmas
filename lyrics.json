@@ -1,0 +1,18 @@
+[
+  { "time": 0.0, "text": "Once bitten and twice shy", "image": "images/once_bitten.png" },
+  { "time": 1.5, "text": "and twice shy", "image": "images/shy.jpg" },
+  { "time": 3.0, "text": "I keep my distance, ", "image": "images/distance.jpg" },
+  { "time": 4.5, "text": "but you still catch my eye", "image": "images/catch_my_eye.jpg" },
+  { "time": 6.0, "text": "Tell me, baby", "image": "images/baby.jpg" },
+  { "time": 7.5, "text": "do you recognize me?", "image": "images/recognize.jpg" },
+  { "time": 9.0, "text": "Well, it's been a year, it doesn't surprise me" },
+  { "time": 11.0, "text": "it doesn't surprise me", "image": "images/surprise_me.jpg" },
+  { "time": 13.0, "text": "Happy Christmas, I wrapped it up and sent it" },
+  { "time": 16.0, "text": "With a note saying 'I love you', I meant it" },
+  { "time": 19.0, "text": "Now I know what a fool I've been" },
+  { "time": 22.0, "text": "But if you kissed me now, I know you'd fool me again" },
+  { "time": 26.0, "text": "Last Christmas, I gave you my heart" },
+  { "time": 29.0, "text": "But the very next day you gave it away" },
+  { "time": 33.0, "text": "This year, to save me from tears" },
+  { "time": 36.0, "text": "I'll give it to someone special" }
+]
